@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <header className="flex justify-center p-8 pb-16 items-center">
-      <nav className="flex absolute top-4 bg-green-50 justify-between sm:px-5 px-3 py-3 rounded-full sm:text-xl items-center">
+      <nav className="flex absolute top-4 z-10 bg-green-50 justify-between sm:px-5 px-3 py-3 rounded-full sm:text-xl items-center">
         {links.map((link) => (
           <Link
             key={link.href}

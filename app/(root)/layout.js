@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export default function layout({ children }) {
@@ -5,7 +6,7 @@ export default function layout({ children }) {
     <section className="bg-gray-200 relative min-h-screen">
       <Navbar />
       {children}
-      <h1>This is the footer section</h1>
+      <Footer />
     </section>
   );
 }
