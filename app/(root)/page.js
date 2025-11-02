@@ -89,7 +89,7 @@ export default function Home() {
           </p>
         </div>
         <h3 className="text-3xl mb-12">Explore Our Services</h3>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {services.slice(0, 6).map((service) => {
             const Icon = service.icon; // dynamically render icon
             return (

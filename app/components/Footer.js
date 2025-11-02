@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <div className="flex gap-12 flex-col py-16 rounded-t-full bg-green-800 px-4 items-center justify-center">
+      <div className="flex gap-12 flex-col py-24 rounded-t-4xl bg-green-800 px-4 items-center justify-end">
         <h1 className="text-white text-5xl font-semibold">
           Your Smile Deserves the Best
         </h1>
@@ -34,24 +34,30 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="hover:text-green-500 transition">
+                <Link href="/" className="hover:text-green-500 transition">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-green-500 transition">
+                <Link href="/about" className="hover:text-green-500 transition">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-green-500 transition">
+                <Link
+                  href="/services"
+                  className="hover:text-green-500 transition"
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-green-500 transition">
+                <Link
+                  href="/contact"
+                  className="hover:text-green-500 transition"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
